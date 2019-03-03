@@ -1,0 +1,49 @@
+body{
+	font-family: sans-serif;
+}
+
+/* use flex to put all the people into multiple rows based on browser size */
+#main{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* make all the images the same height, to make it look clearner */
+.personImage{
+	height: 200px;
+}
+
+/* fix the width of the people divs, so if there's a lot of text it wraps
+and centre everything in it */
+.people{
+	width: 200px;
+	text-align: center;
+	border: 1px solid darkblue;
+	margin: 2px;
+	padding: 2px;
+}
+
+/* make the names stand out more */
+.name{
+	color: darkblue;
+	font-size: 1.1em;
+}
+
+/* make the details a bit smaller
+and make it so the details appear where the image was when you hover */
+.episode{
+	font-size: 0.9em;
+	display: none;
+}
+.people:hover .episode {
+	display: block;
+}
+.people:hover .personImage {
+	display: none;
+}
+
+/* make the header stand out and more header-y */
+#header{
+	text-align: center;
+	color: darkblue;
+}
