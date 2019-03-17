@@ -1,14 +1,36 @@
 body{
-	font-family: sans-serif;
+	font-family: 'Merriweather Sans', sans-serif;
+	background-color: hsl(192, 75%, 60%);
+	background-image: linear-gradient(to right, #ecf0f1, #d4e6f1);
 }
 
+h2{
+	text-align: center;	
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-image: linear-gradient(to right, #ecf0f1, white);
+}
+@media (max-width: 641px){ 
+	header{
+		flex-flow: wrap;
+		background-size: 100% 100px;
+	}
+	h1{
+		order: 3;
+	}
+
+}
 /* use flex to put all the people into multiple rows based on browser size */
 #main{
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
-/* make all the images the same height, to make it look clearner */
+/* make all the images the same height, to make it look cleaner */
 .personImage{
 	height: 200px;
 }
@@ -16,11 +38,13 @@ body{
 /* fix the width of the people divs, so if there's a lot of text it wraps
 and centre everything in it */
 .people{
-	width: 200px;
+	max-width: 200px;
 	text-align: center;
 	border: 1px solid darkblue;
 	margin: 2px;
 	padding: 2px;
+	background-color: #ecf0f1;
+	background-image: linear-gradient(to bottom, #ecf0f1, #d4e6f1);
 }
 
 /* make the names stand out more */
@@ -29,17 +53,11 @@ and centre everything in it */
 	font-size: 1.1em;
 }
 
-/* make the details a bit smaller
-and make it so the details appear where the image was when you hover */
+/* make the details a bit smaller */
 .episode{
+	color: black;
 	font-size: 0.9em;
-	display: none;
-}
-.people:hover .episode {
-	display: block;
-}
-.people:hover .personImage {
-	display: none;
+	font-style: italic;
 }
 
 /* make the header stand out and more header-y */
