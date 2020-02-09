@@ -4,6 +4,6 @@ The Bill regulars who have been in Doctor Who and Doctor Who regulars who have b
 
 Created using HTML and CSS only. I wanted to create two very similar pages using the same CSS.  
 
-[The Bill in Doctor Who] (https://the-bill-and-doctor-who.netlify.com/thebillindoctorwho)
+The Bill in Doctor Who: https://the-bill-and-doctor-who.netlify.com/thebillindoctorwho.html
 
-[Doctor Who in The Bill] (https://the-bill-and-doctor-who.netlify.com/doctorwhointhebill.html)
+Doctor Who in The Bill: https://the-bill-and-doctor-who.netlify.com/doctorwhointhebill.html
